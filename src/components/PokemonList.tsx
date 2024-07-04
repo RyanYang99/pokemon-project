@@ -22,7 +22,7 @@ const PokemonList: React.FC = () => {
     <div className="container mx-auto">
       {pokemons.length === 0 ? (
         <div className="flex flex-col justify-center items-center h-screen">
-          <div className="loader ease-linear reounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+          <span className="loading loading-spinner loading-lg"></span>
           <p className="text-xl font semibold">Loading...</p>
         </div>
       ) : (
@@ -36,7 +36,7 @@ const PokemonList: React.FC = () => {
                   width={96}
                   height={96}
                 />
-                <p>{pokemon.korean_name}</p>
+                <h2>{pokemon.korean_name}</h2>
                 <p>도감번호: {pokemon.id}</p>
               </Link>
             </div>

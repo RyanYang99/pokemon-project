@@ -18,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="w-full h-[60px] bg-[#3477ff] text-center pt-[1rem]">
-          <h2 className="font-bold">My Pokedex</h2>
+        <header className="navbar-center bg-gray-700 w-full h-[100px] text-center pt-[2rem]">
+          <a className="font-bold text-2xl">My Pokedex</a>
         </header>
         {children}
       </body>
